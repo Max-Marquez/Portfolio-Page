@@ -1,0 +1,101 @@
+<DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Max Marquez | Web Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="http://example.com/favicon.png">
+    <link type="text/css" rel="stylesheet" href="CSS/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <!-- Navbar -->
+      <div class="navbar navbar-fixed-top">
+        <h1 class="navbar-brand"><a href="index.html">Max Marquez</a></h1>
+
+        <div class="navbar-buttons text-center">
+          <span><i class="fa fa-bars fa-2x open-menu" aria-hidden="true"></i></span>
+        </div>
+
+
+        <!-- Overlay Navigation Menu -->
+        <div class="overlay">
+          <h2 class="nav-title">Navigation</h2>
+          <nav class="overlay-menu">
+            <ul>
+              <li><a href="index.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="nav-item">
+                <a class="btn btn-default" target="_blank" href="https://twitter.com/Judumi_Marq"><i class="fa fa-twitter" id="twittericon" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-default" target="_blank" href="https://github.com/marqedev"><i class="fa fa-github" id="githubicon" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-default" target="_blank" href="https://www.linkedin.com/in/max-marquez-88a1b513b/"><i class="fa fa-linkedin" id="linkedinicon" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-default" target="_blank" href="https://www.freecodecamp.org/marqedev"><i class="fa fa-free-code-camp" id="freecodecampicon" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-default" target="_blank" href="https://codepen.io/marqedev/"><i class="fa fa-codepen" id="codepenicon" aria-hidden="true"></i></a>
+              </li>
+              <li><i class="nav-item fa fa-times-circle-o close-menu" aria-hidden="true"></i></li>
+            </ul>
+          </nav>
+        </div> <!-- end overlay -->
+      </div> <!-- end navbar -->
+
+      <div class="contact container" id="contact">
+        <h1 class="text-center">Contact</h1>
+        <hr>
+        <h3 class="text-center">Have a question or want to work together?</h3>
+        <div class="container container-fluid" id="contact_form">
+          <form action="mailto:marqedev@gmail.com" method:"post" enctype="text/plain">
+
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Name*" required>
+
+            <label for="email"></label>
+            <input type="text" id="email" name="email" placeholder="Email address*" required>
+
+            <label for="phone"></label>
+            <input type="text" id="phone" name="phone" placeholder="Phone number">
+
+            <label for="website"></label>
+            <input type="text" id="website" name="website" placeholder="Website">
+
+            <label for="details"></label>
+            <textarea id="details" name="details" placeholder="Please give a few details about the project... what is it? How can I help? Timeline and Budget details are also appreciated." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+            <p style="display: inline-block;" class="float-right">*required</p>
+
+          </form>
+        </div>
+      </div> <!-- End contact -->
+
+      <footer class="text-center">
+        <p><a href="index.html">Max Marquez</a> &copy; 2018</p>
+        <div class="social-media">
+          <a class="btn btn-default" target="_blank" href="https://twitter.com/Judumi_Marq"><i class="fa fa-twitter" id="twittericon" aria-hidden="true"></i> Twitter</a>
+          <a class="btn btn-default" target="_blank" href="https://github.com/marqedev"><i class="fa fa-github" id="githubicon" aria-hidden="true"></i> GitHub</a>
+          <a class="btn btn-default" target="_blank" href="https://www.linkedin.com/in/max-marquez-88a1b513b/"><i class="fa fa-linkedin" id="linkedinicon" aria-hidden="true"></i> LinkedIn</a>
+          <a class="btn btn-default" target="_blank" href="https://www.freecodecamp.org/marqedev"><i class="fa fa-free-code-camp" id="freecodecampicon" aria-hidden="true"></i> freeCodeCamp</a>
+          <a class="btn btn-default" target="_blank" href="https://codepen.io/marqedev/"><i class="fa fa-codepen" id="codepenicon" aria-hidden="true"></i> CodePen</a>
+        </div> <!-- End Social-Media -->
+      </footer>
+    </div> <!-- end wrapper -->
+  </body>
+</html>

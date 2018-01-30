@@ -1,0 +1,121 @@
+<DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Max Marquez | Web Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="CSS/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+    <!-- Navbar -->
+    <div class="navbar navbar-fixed-top">
+      <h1 class="navbar-brand"><a href="index.html">Max Marquez</a></h1>
+
+      <div class="navbar-buttons text-center">
+        <span><i class="fa fa-bars fa-2x open-menu" aria-hidden="true"></i></span>
+      </div>
+
+
+      <!-- Overlay Navigation Menu -->
+      <div class="overlay">
+        <h2 class="nav-title">Navigation</h2>
+        <nav class="overlay-menu">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-item">
+              <a class="btn btn-default" target="_blank" href="https://twitter.com/Judumi_Marq"><i class="fa fa-twitter" id="twittericon" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-default" target="_blank" href="https://github.com/marqedev"><i class="fa fa-github" id="githubicon" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-default" target="_blank" href="https://www.linkedin.com/in/max-marquez-88a1b513b/"><i class="fa fa-linkedin" id="linkedinicon" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-default" target="_blank" href="https://www.freecodecamp.org/marqedev"><i class="fa fa-free-code-camp" id="freecodecampicon" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-default" target="_blank" href="https://codepen.io/marqedev/"><i class="fa fa-codepen" id="codepenicon" aria-hidden="true"></i></a>
+            </li>
+            <li><i class="nav-item fa fa-times-circle-o close-menu" aria-hidden="true"></i></li>
+          </ul>
+        </nav>
+      </div> <!-- end overlay -->
+    </div> <!-- end navbar -->
+
+    <div class="portfolio" id="portfolio">
+      <h1 class="text-center">Projects</h1>
+      <hr>
+      <div class="band">
+        <!-- grid item, containing a card -->
+        <div class="item-4">
+          <a target="_blank" href="https://codepen.io/marqedev/full/pePZeo/" class="card">
+            <img class="thumb" src='img/Mister_Rogers_Website.png'>
+            <article>
+              <h1>Fred Rogers Tribute Page</h1>
+              <p>Using basic HTML, and CSS to create a tribute page to tv icon Fred Rogers. One of my first projects that peeked my interest in creating websites.</p>
+              <span>HTML, CSS</span>
+            </article>
+          </a>
+        </div>
+        <div class="item-5">
+          <a target="_blank" href="https://codepen.io/marqedev/full/JNBxmy/" class="card">
+            <img class="thumb" src='img/Random_Quote_Machine_Website.png'>
+            <article>
+              <h1>Random Movie Quote Generator</h1>
+              <p>Used HTML,  CSS, and jQuery to pull a random movie quote from a few of my favorite movies. When the user pushes the button a new quote is grabbed. The user can then push an alternate button to tweet the quote.</p>
+              <span>HTML, CSS, jQuery</span>
+            </article>
+          </a>
+        </div>
+        <div class="item-6">
+          <a target="_blank" href="https://codepen.io/marqedev/full/pPQvzN/" class="card">
+            <img class="thumb" src='img/Local_Weather_Website.png'>
+            <article>
+              <h1>Local Weather App</h1>
+              <p>Used HTML, CSS, and jQuery to create an app that grabs the users geolocation and runs it through the Dark Sky API to get the local weather. Background and icon changes based on weather data. Includes button to convert from fahrenheit to celsius.</p>
+              <span>HTML, CSS, jQuery</span>
+            </article>
+          </a>
+        </div>
+        <div class="item-7">
+          <a target="_blank" href="https://codepen.io/marqedev/full/aEMvRe/" class="card">
+            <img class="thumb" src='img/Twitch_API_Website.png'>
+            <article>
+              <h1>Twitch.tv JSON API</h1>
+              <p>Used HTML, CSS, and jQuery to make an app that tells the user when a specific Twitch streamer is live. With the ability to search for a user. Info also includes what game the streamer is playing, and the name of the stream.</p>
+              <span>HTML, CSS, jQuery</span>
+            </article>
+          </a>
+        </div>
+      </div>
+      <div class="text-center ">
+        <h3>Feel like I could help with your project?</h3>
+        <a class="block btn btn-default" id="hire_bump_2" href="contact.html">Let's Get Started</a>
+      </div><!--End hire push-->
+    </div> <!-- End portfolio -->
+
+    <footer class="text-center">
+      <p><a href="index.html">Max Marquez</a> &copy; 2018</p>
+      <div class="social-media">
+        <a class="btn btn-default" target="_blank" href="https://twitter.com/Judumi_Marq"><i class="fa fa-twitter" id="twittericon" aria-hidden="true"></i> Twitter</a>
+        <a class="btn btn-default" target="_blank" href="https://github.com/marqedev"><i class="fa fa-github" id="githubicon" aria-hidden="true"></i> GitHub</a>
+        <a class="btn btn-default" target="_blank" href="https://www.linkedin.com/in/max-marquez-88a1b513b/"><i class="fa fa-linkedin" id="linkedinicon" aria-hidden="true"></i> LinkedIn</a>
+        <a class="btn btn-default" target="_blank" href="https://www.freecodecamp.org/marqedev"><i class="fa fa-free-code-camp" id="freecodecampicon" aria-hidden="true"></i> freeCodeCamp</a>
+        <a class="btn btn-default" target="_blank" href="https://codepen.io/marqedev/"><i class="fa fa-codepen" id="codepenicon" aria-hidden="true"></i> CodePen</a>
+      </div> <!-- End Social-Media -->
+    </footer>
+  </div> <!-- End wrapper -->
+  </body>
+</html>
