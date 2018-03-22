@@ -5,7 +5,7 @@
   <head>
     <title>Contact Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="http://example.com/favicon.png">
+    <link rel="icon" href="">
     <link type="text/css" rel="stylesheet" href="CSS/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -61,56 +61,23 @@
         <h1 class="text-center">Contact</h1>
         <hr>
         <h3 class="text-center">Have a question or want to work together?</h3>
-        <div class="container container-fluid" id="contact_form">
-          <form name="contactform" method="post" action="send_form_email.php">
-            <table width="450px">
-            <tr>
-             <td valign="top">
-              <label for="first_name">First Name *</label>
-             </td>
-             <td valign="top">
-              <input  type="text" name="first_name" maxlength="50" size="30">
-             </td>
-            </tr>
-            <tr>
-             <td valign="top">
-              <label for="last_name">Last Name *</label>
-             </td>
-             <td valign="top">
-              <input  type="text" name="last_name" maxlength="50" size="30">
-             </td>
-            </tr>
-            <tr>
-             <td valign="top">
-              <label for="email">Email Address *</label>
-             </td>
-             <td valign="top">
-              <input  type="text" name="email" maxlength="80" size="30">
-             </td>
-            </tr>
-            <tr>
-             <td valign="top">
-              <label for="telephone">Telephone Number</label>
-             </td>
-             <td valign="top">
-              <input  type="text" name="telephone" maxlength="30" size="30">
-             </td>
-            </tr>
-            <tr>
-             <td valign="top">
-              <label for="comments">Comments *</label>
-             </td>
-             <td valign="top">
-              <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-             </td>
-            </tr>
-            <tr>
-             <td colspan="2" style="text-align:center">
-              <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
-             </td>
-            </tr>
-            </table>
+
+          <div class="container" id="contact_form">
+            <form name="contactform" method="post" action="contactform.php">
+
+              <input type="text" id="name" name="name" placeholder="Name*" required>
+              <input type="text" id="email" name="email" placeholder="Email*" required>
+              <input type="text" id="phone" name="phone" placeholder="Phone">
+              <textarea id="message" name="message" placeholder="Please provide a few details about the project. Including budget, timeframe, etc." style="height:200px"></textarea>
+              <button class="btn btn-default" onclick="myFunction()" type="submit" name="submit">Send</button>
+
+              <script>
+              function myFunction() {
+                confirm("Thanks for contacting me! I will be in touch with you very soon.");
+              }
+              </script>
             </form>
+          </div>
         </div>
       </div> <!-- End contact -->
 
